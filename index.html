@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <title>tourrzn</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper container--header">   
+            <a href="index.html" class="logo">
+                <svg width="191" height="49" viewBox="0 0 191 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_14455_19)">
+                    <path d="M17.2246 47.413C16.5788 47.9419 15.796 48.3381 14.8738 48.6038C13.9516 48.8694 12.9759 48.9999 11.9515 48.9999C9.37302 48.9999 7.38225 48.3241 5.97687 46.9725C4.57148 45.6209 3.86763 43.6518 3.86763 41.0674V29.7397H-9.15527e-05V25.3307H3.86763V19.9546H9.35909V25.3307H15.6427V29.7397H9.35909V40.9346C9.35909 42.0811 9.63784 42.955 10.193 43.5562C10.7505 44.1575 11.5543 44.4604 12.6089 44.4604C13.8377 44.4604 14.8645 44.1365 15.6845 43.491L17.2223 47.4153L17.2246 47.413ZM31.5038 48.9999C29.1321 48.9999 26.9926 48.4849 25.0878 47.4572C23.183 46.4296 21.6986 44.9964 20.6277 43.1601C19.5592 41.3238 19.0249 39.2451 19.0249 36.9241C19.0249 34.6031 19.5592 32.5314 20.6277 30.7091C21.6963 28.8868 23.183 27.4629 25.0878 26.4329C26.9926 25.4052 29.1297 24.8902 31.5038 24.8902C33.9057 24.8902 36.0591 25.4052 37.9616 26.4329C39.8664 27.4606 41.3508 28.8868 42.4217 30.7091C43.4902 32.5314 44.0245 34.6031 44.0245 36.9241C44.0245 39.2451 43.4902 41.3238 42.4217 43.1601C41.3531 44.9964 39.8664 46.4296 37.9616 47.4572C36.0568 48.4849 33.9034 48.9999 31.5038 48.9999ZM31.5038 44.2833C33.5248 44.2833 35.195 43.6075 36.5121 42.2559C37.8292 40.9043 38.4889 39.1263 38.4889 36.9218C38.4889 34.7173 37.8292 32.9392 36.5121 31.5876C35.195 30.236 33.5248 29.5602 31.5038 29.5602C29.4828 29.5602 27.8196 30.236 26.5164 31.5876C25.2132 32.9392 24.5605 34.7173 24.5605 36.9218C24.5605 39.1263 25.2132 40.9043 26.5164 42.2559C27.8196 43.6075 29.4828 44.2833 31.5038 44.2833ZM72.0138 25.1536V48.69H66.7848V45.6932C65.9067 46.7511 64.808 47.5668 63.4909 48.14C62.1738 48.7133 60.7521 48.9999 59.2283 48.9999C56.0946 48.9999 53.6276 48.126 51.825 46.376C50.0224 44.6282 49.1234 42.0345 49.1234 38.5973V25.1536H54.6149V37.8469C54.6149 39.9629 55.0911 41.5428 56.0435 42.5845C56.9959 43.6262 58.3502 44.1481 60.1087 44.1481C62.0716 44.1481 63.6303 43.5376 64.7871 42.3188C65.9439 41.1001 66.5223 39.343 66.5223 37.0523V25.1512H72.0138V25.1536ZM84.4462 28.5908C86.0282 26.123 88.8111 24.8879 92.7949 24.8879V30.1335C92.3257 30.0449 91.9006 30.0007 91.5196 30.0007C89.3825 30.0007 87.7123 30.6252 86.5113 31.8743C85.3104 33.1233 84.7087 34.9223 84.7087 37.2737V48.69H79.2173V25.1536H84.4462V28.5908ZM102.679 28.5908C104.261 26.123 107.044 24.8879 111.028 24.8879V30.1335C110.559 30.0449 110.133 30.0007 109.752 30.0007C107.615 30.0007 105.945 30.6252 104.744 31.8743C103.543 33.1233 102.944 34.9223 102.944 37.2737V48.69H97.4525V25.1536H102.681V28.5908H102.679ZM134.225 44.281V48.6876H113.971V45.2061L126.845 29.5602H114.233V25.1536H133.874V28.6351L120.956 44.281H134.225ZM152.59 24.8879C155.55 24.8879 157.921 25.7548 159.708 27.4886C161.494 29.2223 162.388 31.7927 162.388 35.202V48.69H156.897V35.9081C156.897 33.8504 156.414 32.3007 155.447 31.2567C154.481 30.2127 153.103 29.6931 151.317 29.6931C149.296 29.6931 147.7 30.3036 146.529 31.5224C145.359 32.7412 144.771 34.4982 144.771 36.7889V48.69H139.28V25.1536H144.509V28.1947C145.417 27.1064 146.56 26.2838 147.935 25.7268C149.312 25.1676 150.864 24.8902 152.592 24.8902L152.59 24.8879Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M190.998 14.3712C187.904 20.5722 182.87 25.629 176.695 28.7424C170.519 25.629 165.487 20.5722 162.391 14.3712C165.485 8.17016 170.519 3.11333 176.695 0C182.872 3.11333 187.904 8.17016 190.998 14.3712Z" fill="#FEFEFE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_14455_19">
+                    <rect width="191" height="49" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">Открыть Рязанский край</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">Планируем путешествие</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">Маршруты и экскурсии</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">События</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">Информация</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item--text">О проекте</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-block">
+                <a href="#" class="btn">Контакты</a>
+                <div class="btn-block__lang">
+                    <a href="#" class="btn-block__lang-item">
+                        <div class="btn-block__lang-item--icon">
+                            <img src="./img/de-lang.svg" alt="Lang De">
+                        </div>
+                        <span class="btn-block__lang-item--name">De.</span>
+                    </a>
+                    <a href="#" class="btn-block__lang-item">
+                        <div class="btn-block__lang-item--icon">
+                            <img src="./img/en-lang.svg" alt="Lang En">
+                        </div>
+                        <span class="btn-block__lang-item--name">En.</span>
+                    </a>
+                    <a href="#" class="btn-block__lang-item"> 
+                        <div class="btn-block__lang-item--icon">
+                            <img src="./img/fr-lang.svg" alt="Lang Fr">
+                        </div>
+                        <span class="btn-block__lang-item--name">Fr.</span>
+                    </a>
+                </div>               
+            </div>
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="mainscreen">
+            <div class="mainscreen__wrapper container--mainscreen">
+                <div class="mainscreen__wrapper--left">
+                    <div class="title">
+                        <h1 class="title__name">
+                            Рязани - <span>930 лет</span>
+                        </h1>
+                        <p class="title__text">год основания Рязани - 1095</p>
+                    </div>
+                    <div class="btn-block">
+                        <a href="#" class="btn-block__item btn--dark">Мероприятия</a>
+                        <a href="#" class="btn-block__item btn--light">Как отдохнуть</a>
+                    </div>
+                </div>
+                <div class="mainscreen__wrapper--right">
+                    <div class="mainscreen__square">
+                        <a href="#" class="mainscreen__square-item--medium">
+                            <span class="mainscreen__square-item--name">Места</span>
+                        </a>
+                        <a href="#" class="mainscreen__square-item--small">
+                            <span class="mainscreen__square-item--name">История</span>
+                        </a>
+                        <a href="#" class="mainscreen__square-item--big">
+                            <span class="mainscreen__square-item--name">Отдых</span>
+                        </a>
+                    </div>
+                </div>           
+            </div>
+            <img src="./img/square-yellow-right.png" alt="Square Yellow Right" class="square--yellow-right">
+            <img src="./img/mainscreen-fon.jpg" alt="" class="fon">
+        </section>
+        <section class="information">
+            <div class="information__wrapper">
+                <div class="information__wrapper--top container--information">
+                    <div class="title">
+                        <h2 class="title__name">Рязанский край: путешествие в сердце России</h2>
+                        <p class="title__text">Рязанский край — это место, где каждый найдет что-то свое. Любители  истории оценят древние монастыри и усадьбы, ценители природы —  заповедные леса и реки, а гурманы — блюда местной кухни. Погрузитесь в  атмосферу региона, который вдохновляет и удивляет. Ваше путешествие  начинается здесь!</p>
+                    </div>
+                </div>
+                <div class="information__wrapper--middle">
+                    <div class="information__content-item">
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">Начать путешествие</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">Где остановиться</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">Идеи для активного отдыха</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">Топ-10 мест для посещения</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">История и наследие</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                        <a href="#" class="information__item">
+                            <span class="information__item-name">Тематические экскурсии</span>
+                            <img class="information__item-plus" src="./img/plus.svg" alt="Plus">
+                        </a>
+                    </div>
+                </div>
+                <img src="./img/square-blue-right.png" alt="Square blue right" class="fon--square-blue">           
+            </div>
+            <img src="./img/image-right.png" alt="image-right" class="fon--img">  
+            <img src="./img/square-white-right.png" alt="Square Right" class="fon--square-right">
+        </section>
+        <section class="hotels">
+            <div class="hotels__wrapper">
+                <div class="hotels__wrapper--top">
+                    <a href="#" class="tour">
+                        <p class="tour__name">Открой Рязанский край</p>
+                        <img class="tour__arrow" src="./img/arrow-down.svg" alt="Arrow down">
+                    </a>
+                </div>
+                <div class="hotels__wrapper--main">
+                    <div class="title">
+                        <h2 class="title__name">Где остановиться с комфортом</h2>
+                        <p class="title__text">Нашли лучшие варианты для вас</p>
+                    </div>
+                    <div class="hotels__content">
+                        <div class="hotels__item">
+                            <div class="hotels__item-img">
+                                <img src="./img/hotel-1.png" alt="Hotel 1">
+                            </div>
+                            <div class="hotels__item-name">
+                                <span>Отель Старый Город</span>
+                            </div>
+                        </div>
+                        <div class="hotels__item">
+                            <div class="hotels__item-img">
+                                <img src="./img/hotel-2.png" alt="Hotel 2">
+                            </div>
+                            <div class="hotels__item-name">
+                                <span>Спа-Отель Морская Школа</span>
+                            </div>
+                        </div>
+                        <div class="hotels__item">
+                            <div class="hotels__item-img">
+                                <img src="./img/hotel-3.png" alt="Hotel 3">
+                            </div>
+                            <div class="hotels__item-name">
+                                <span>Отель "В некотором Царстве"</span>
+                            </div>
+                        </div>
+                        <div class="hotels__item">
+                            <div class="hotels__item-img">
+                                <img src="./img/hotel-4.png" alt="Hotel 4">
+                            </div>
+                            <div class="hotels__item-name">
+                                <span>Гостиница Арагон</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guideboock">
+            <div class="guideboock__wrapper container">
+                <div class="title">
+                    <h2 class="title__name">
+                        То, что не найти <br>в путеводителях
+                    </h2>
+                    <div class="title__text">
+                        <p>Рязанцы раскрывают свои любимые уголки, куда редко заглядывают  туристы. Здесь, вдали от шумных туристических маршрутов, вы ощутите  настоящий дух города — уютные дворики с винтажными вывесками, семейные  кафе, тихие набережные с  потрясающими закатами.</p>
+                        <p>Именно в этих местах вы услышите  интересные городские легенды от местных жителей и найдете ту самую  аутентичную сувенирную лавку. Мы собрали для вас особенные адреса,  которые рязанцы берегут для себя, но готовы поделиться с теми, кто хочет понять душу этого города.</p>
+                    </div>
+                </div>
+                <div class="guideboock__slider-content">
+                    <div class="guideboock__slider-sub swiper">
+                        <div class="guideboock__slider-wrapper swiper-wrapper">
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <span class="guideboock__slide-number">01</span>
+                                <div class="guideboock__slide-plus">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.078 8.93921L16.078 7.13858H8.93932L8.93932 -7.68051e-05H7.13869L7.13869 7.13858H2.83799e-05L2.82113e-05 8.93921L7.13869 8.93921L7.13869 16.0779H8.93932L8.93932 8.93921L16.078 8.93921Z" fill="#2F3034"/>
+                                    </svg>                                    
+                                </div>
+                                <span class="guideboock__slide-name">Древний Касимов</span>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <span class="guideboock__slide-number">02</span>
+                                <div class="guideboock__slide-plus">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.078 8.93921L16.078 7.13858H8.93932L8.93932 -7.68051e-05H7.13869L7.13869 7.13858H2.83799e-05L2.82113e-05 8.93921L7.13869 8.93921L7.13869 16.0779H8.93932L8.93932 8.93921L16.078 8.93921Z" fill="#2F3034"/>
+                                    </svg>                                    
+                                </div>
+                                <span class="guideboock__slide-name">Рыбацкая деревня</span>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <span class="guideboock__slide-number">03</span>
+                                <div class="guideboock__slide-plus">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.078 8.93921L16.078 7.13858H8.93932L8.93932 -7.68051e-05H7.13869L7.13869 7.13858H2.83799e-05L2.82113e-05 8.93921L7.13869 8.93921L7.13869 16.0779H8.93932L8.93932 8.93921L16.078 8.93921Z" fill="#2F3034"/>
+                                    </svg>                                    
+                                </div>
+                                <span class="guideboock__slide-name">Пьяный лес</span>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <span class="guideboock__slide-number">04</span>
+                                <div class="guideboock__slide-plus">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.078 8.93921L16.078 7.13858H8.93932L8.93932 -7.68051e-05H7.13869L7.13869 7.13858H2.83799e-05L2.82113e-05 8.93921L7.13869 8.93921L7.13869 16.0779H8.93932L8.93932 8.93921L16.078 8.93921Z" fill="#2F3034"/>
+                                    </svg>                                    
+                                </div>
+                                <span class="guideboock__slide-name">Сплавы <br> по реке Пре</span>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <span class="guideboock__slide-number">05</span>
+                                <div class="guideboock__slide-plus">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.078 8.93921L16.078 7.13858H8.93932L8.93932 -7.68051e-05H7.13869L7.13869 7.13858H2.83799e-05L2.82113e-05 8.93921L7.13869 8.93921L7.13869 16.0779H8.93932L8.93932 8.93921L16.078 8.93921Z" fill="#2F3034"/>
+                                    </svg>                                    
+                                </div>
+                                <span class="guideboock__slide-name">Старожиловский конезавод</span>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="guideboock__slider-main swiper">
+                        <div class="guideboock__slider-wrapper swiper-wrapper">
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <img src="./img/slide-1.png" alt="" class="guideboock__slide-img">
+                                <div class="guideboock__slide-content">
+                                    <h3>Древний Касимов</h3>
+                                    <p>
+                                        На высоких холмах у живописной излучины Оки раскинулся город с  удивительной историей. Касимов — практически ровесник Москвы: его  основал Юрий Долгорукий в 1152 г. для защиты границ  Владимиро-Суздальского княжества. Крепость получила название Городец  Мещерский. 300 лет спустя московский князь Василий Темный подарил его  татарскому царевичу Касим-хану, в честь которого и переименовали город.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <img src="./img/slide-1.png" alt="Slide 1" class="guideboock__slide-img">
+                                <div class="guideboock__slide-content">
+                                    <h3>Рыбацкая деревня</h3>
+                                    <p>
+                                        На высоких холмах у живописной излучины Оки раскинулся город с  удивительной историей. Касимов — практически ровесник Москвы: его  основал Юрий Долгорукий в 1152 г. для защиты границ  Владимиро-Суздальского княжества. Крепость получила название Городец  Мещерский. 300 лет спустя московский князь Василий Темный подарил его  татарскому царевичу Касим-хану, в честь которого и переименовали город.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <img src="./img/slide-1.png" alt="" class="guideboock__slide-img">
+                                <div class="guideboock__slide-content">
+                                    <h3>Пьяный лес</h3>
+                                    <p>
+                                        На высоких холмах у живописной излучины Оки раскинулся город с  удивительной историей. Касимов — практически ровесник Москвы: его  основал Юрий Долгорукий в 1152 г. для защиты границ  Владимиро-Суздальского княжества. Крепость получила название Городец  Мещерский. 300 лет спустя московский князь Василий Темный подарил его  татарскому царевичу Касим-хану, в честь которого и переименовали город.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <img src="./img/slide-1.png" alt="" class="guideboock__slide-img">
+                                <div class="guideboock__slide-content">
+                                    <h3>Сплавы по реке Пре</h3>
+                                    <p>
+                                        На высоких холмах у живописной излучины Оки раскинулся город с  удивительной историей. Касимов — практически ровесник Москвы: его  основал Юрий Долгорукий в 1152 г. для защиты границ  Владимиро-Суздальского княжества. Крепость получила название Городец  Мещерский. 300 лет спустя московский князь Василий Темный подарил его  татарскому царевичу Касим-хану, в честь которого и переименовали город.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="guideboock__slider-slide swiper-slide">
+                                <img src="./img/slide-1.png" alt="" class="guideboock__slide-img">
+                                <div class="guideboock__slide-content">
+                                    <h3>Старожиловский конезавод</h3>
+                                    <p>
+                                        На высоких холмах у живописной излучины Оки раскинулся город с  удивительной историей. Касимов — практически ровесник Москвы: его  основал Юрий Долгорукий в 1152 г. для защиты границ  Владимиро-Суздальского княжества. Крепость получила название Городец  Мещерский. 300 лет спустя московский князь Василий Темный подарил его  татарскому царевичу Касим-хану, в честь которого и переименовали город.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="guideboock__slider-nav">
+                            <div class="guideboock__slide-next swiper-button-next"></div>
+                            <div class="guideboock__slide-prev swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="path">
+            <div class="path__wrapper container">
+                <div class="title">
+                    <h2 class="title__name">Выберите свой идеальный маршрут</h2>
+                </div>
+                <div class="path__content">
+                    <div class="path__slider swiper">
+                        <div class="path__slider-wrapper swiper-wrapper">
+                            <div class="path__slider-slide swiper-slide">
+                                <p class="path__slide-name">Сувениры и подарки</p>
+                            </div>
+                            <div class="path__slider-slide swiper-slide">
+                                <p class="path__slide-name">Где остановиться</p>
+                            </div>
+                            <div class="path__slider-slide swiper-slide">
+                                <p class="path__slide-name">Где поесть</p>
+                            </div>
+                            <div class="path__slider-slide swiper-slide">
+                                <p class="path__slide-name">Необычные места</p>
+                            </div>
+                            <div class="path__slider-slide swiper-slide">
+                                <p class="path__slide-name">История и наследие</p>
+                            </div>
+                        </div>
+                        <div class="path__slider-nav">
+                            <div class="path__btn-next swiper-button-next"></div>
+                            <div class="path__btn-prev swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </main>    
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper--top">
+                <div class="footer__angle">
+                    <svg width="143" height="156" viewBox="0 0 143 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.62939e-06 156L8.10418e-07 0L143 156L7.62939e-06 156Z" fill="#419345"/>
+                    </svg>                        
+                </div>
+            </div>
+            <div class="footer__wrapper--middle">
+                <div class="footer__content">
+                    <a href="index.html" class="logo">
+                        <img src="./img/footer-logo.svg" alt="Footer logo">
+                    </a>
+                    <div class="footer__content--right">
+                        <div class="footer__contacts">
+                            <h4 class="footer__title">Contacts:</h4>
+                            <span class="footer__contacts-item">
+                                Erwitter Str. 40  <br>
+                                59590 Geseke      <br>
+                                GERMANY
+                            </span>
+                            <span class="footer__contacts-item">
+                                +49 29 42 / 97 83 71
+                            </span>
+                            <a href="mailto:info@m-bp.de" class="footer__contacts-link">info@m-bp.de</a>
+                        </div>
+                        <div class="footer__socials">
+                            <h4 class="footer__title">Our Social Media:</h4>
+                            <div class="footer__socials-content">
+                                <a href="#" class="footer__socials-item">
+                                    <span>Ig</span>
+                                </a>
+                                <a href="#" class="footer__socials-item">
+                                    <span>Fb</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper--bottom container">
+                <div class="footer__copyright-content">
+                    <span class="footer__copyright-item">
+                        Imprint    l     Data Privacy
+                    </span>
+                    <span class="footer__copyright-item">
+                        Copyright : mbp | Mollenhauer Beraten & Planen GmbH
+                    </span>
+                    <span class="footer__copyright-item">
+                        Consulting & Structural Engineering Design
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
